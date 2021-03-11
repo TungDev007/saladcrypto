@@ -102,7 +102,7 @@ const BlogContent = () => {
           </Grid>
         </Grid>
 
-        <Grid item xs={12} sm={8}>
+        <Grid item xs={12} sm={8} md={6}>
           <Box mt={{ xs: 3, sm: 0 }}>
             <Typography>
               <Box>
@@ -177,6 +177,7 @@ const BlogContent = () => {
             </ul>
           </Box>
         </Grid>
+        <Grid item xs={12} md={2} />
       </Grid>
     </Box>
   );
