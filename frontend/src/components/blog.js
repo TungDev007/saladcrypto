@@ -77,7 +77,12 @@ const BlogContent = () => {
               </Typography>
             </Grid>
             <Grid item xs={6} sm={12}>
-              <Box mt={{ xs: 0, sm: 3 }} mb={1}>
+              <Box
+                display={{ xs: "block", md: "inline-block" }}
+                mt={{ xs: 0, sm: 3 }}
+                mb={1}
+                mr={1}
+              >
                 <Chip
                   classes={{ root: classes.chipCustom }}
                   variant="outlined"
@@ -85,7 +90,7 @@ const BlogContent = () => {
                   label="Category 1"
                 />
               </Box>
-              <Box>
+              <Box display="inline-block">
                 <Chip
                   classes={{ root: classes.chipCustom }}
                   variant="outlined"
