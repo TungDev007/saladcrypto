@@ -13,27 +13,37 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-strapi",
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        apiURL: process.env.API_URL || "http://localhost:1337",
-        contentTypes: ["article", "category", "writer"],
-        singleTypes: [`homepage`, `global`],
-        queryLimit: 1000,
+        fonts: [
+          `Libre Baskerville\:ital,wght@0,400;0,700;1,400`,
+          `Montserrat\:400,600`,
+        ],
+        display: "swap",
       },
     },
+    // {
+    //   resolve: "gatsby-source-strapi",
+    //   options: {
+    //     apiURL: process.env.API_URL || "http://localhost:1337",
+    //     contentTypes: ["article", "category", "writer"],
+    //     singleTypes: [`homepage`, `global`],
+    //     queryLimit: 1000,
+    //   },
+    // },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: "gatsby-starter-default",
-        short_name: "starter",
-        start_url: "/",
-        background_color: "#663399",
-        theme_color: "#663399",
-        display: "minimal-ui",
-      },
-    },
-    "gatsby-plugin-offline",
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: "gatsby-starter-default",
+    //     short_name: "starter",
+    //     start_url: "/",
+    //     background_color: "#663399",
+    //     theme_color: "#663399",
+    //     display: "minimal-ui",
+    //   },
+    // },
+    // "gatsby-plugin-offline",
   ],
 };
